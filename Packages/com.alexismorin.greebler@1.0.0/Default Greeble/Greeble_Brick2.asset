@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65abd7a2e087f6d40be39e9a88f1f0ee, type: 3}
+  m_Name: Greeble_Brick2
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 557087398767683474, guid: a32613f5422243040a12ca5dcdc8ef5a, type: 3}
+  randomYRotation: 1
+  scale: {x: 0.8, y: 3}

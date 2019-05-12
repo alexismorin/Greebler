@@ -1,0 +1,12 @@
+{
+  "name": "com.alexismorin.greebler",
+  "displayName": "Greebler",
+  "version": "1.0.0",
+  "unity": "2019.2",
+  "description": "Procedurally add greeble and footing to the nooks and crannies of your scene.",
+  "keywords": [
+    "level art",
+    "procedural"
+  ],
+  "category": "Open-Source"
+}
