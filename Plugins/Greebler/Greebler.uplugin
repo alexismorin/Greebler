@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Greebler",
+	"Description": "Automatically add detail in the nooks and crannies of your scene.",
+	"Category": "Other",
+	"CreatedBy": "Alexis Morin",
+	"CreatedByURL": "https://github.com/alexismorin/Greebler",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "4.22.0",
+	"CanContainContent": true,
+	"Installed": true
+}

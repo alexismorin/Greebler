@@ -7,8 +7,6 @@ In her [2017 GDC presentation](https://www.youtube.com/watch?v=WumyfLEa6bU), Tra
 
 While nowadays realtime mesh painting tools allow for impressive customization and complex detailing, the final greebling pass is often done manually and (to the pained cries of level artists) often requires touch-ups when (not if, *when*) the level design changes. With this engine-agnostic plugin, you can now simply set a bounding volume, throw in the meshes you'd like to use and you will then be able to interactively instance them all over the map (while also being able to control values like noise magnitude, mesh orientation and density).
 
-**While the the Unity package is fully functional, I'm still at work on the Unreal version (Yes I'm actually on it, I need for a production). Hang tight!**
-
 ### Usage - Unity
 
 ![unityspawn](images/unityspawn.png)
@@ -36,6 +34,22 @@ When you're happy with the preview, press the *Greeble* button and your scene sh
 
 Per usual for detail meshes, remember to have them non-static and with a GPU instanced shader to save on performance. Don't feel guilty about dynamic meshes, that's what the Made with Unity did for the *Book of the Dead* foliage!
 
+### Usage - Unreal
+
+![unrealsettings](images/unrealsettings.png)
+
+After setting up which static meshes you'd like to use in the static meshes array, you can tweak a few settings:
+
+- Voxel Size: How dense should the generated previews and greeble be. Smaller numbers = higher detail
+- Noise Magnitude: Noise applied to the final spawn positions.
+- Footing Threshold: Higher values here will make greeble only appear in cracks. 3 is a good value, use 2 for stuff like grass.
+- Gravity Direction: Vector direction of where greeble will settle. Set to 0,1,0 for stalactites?
+- Drop Threshold: Voxel threshold to spawn greeble. Higher values = Higher density though you probably should just decrease voxel size.
+
+When you're happy with the preview, press the *Greeble* button and the plugin should pop out an instancedStaticMesh actor into your scene.
+
+![unrealresults](images/unrealresults.png)
+
 ### Install process
 The repository is split for the two engines: the *Plugin* folder's for Unreal and the *Packages* folder for Unity.
 
@@ -45,8 +59,18 @@ The repository is split for the two engines: the *Plugin* folder's for Unreal an
 
 This is a plugin that makes use of Unity's *Package Manager* feature. Just drop the *com.alexismorin.greebler* folder into your *packages* folder (found at the same level as the Assets folder) and it should work out-of-the-box. If you're using a pre-packman version of Unity (maybe supported, can be made to work if you're courageous), take the stuff inside the *com.alexismorin.greebler* folder and then drag it anywhere into your regular project hierarchy.
 
-Per usual, this was whipped up in a couple of hours on my couch (and a few on my bed here and there, give me a break) - bugs beware, tweak or fork as you wish 👨🏻‍🎨
+#### Unreal 4.22
+
+![plugins](images/plugins.png)
+
+Just drag the *Greebler* folder into your project's *Plugins* folder (create it at the same level as your content folder if you don't have one already) and open your project - things should work out by themselves.
+
+Unreal will probably bicker if you don't, but you should also probably:
+- Turn on Blueprint Editor Utilities in your Editor preferences.
+- Raise your maximum loop iteration count to 5000000 in the project settings - the plugin needs to do a lot of number crunching when creating the point cloud and will trip out Unreal's infinite loop alarm system otherwise.
 
 #### Bugs
+
+Per usual, this was whipped up in a couple of hours on my couch (and a few on my bed here and there, give me a break) - bugs beware, tweak or fork as you wish 👨🏻‍🎨
 
 - Unity: Some stuff still spawns under large objects - not that much of a problem but could be a performance issue for larger projects
