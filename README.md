@@ -46,3 +46,7 @@ The repository is split for the two engines: the *Plugin* folder's for Unreal an
 This is a plugin that makes use of Unity's *Package Manager* feature. Just drop the *com.alexismorin.greebler* folder into your *packages* folder (found at the same level as the Assets folder) and it should work out-of-the-box. If you're using a pre-packman version of Unity (maybe supported, can be made to work if you're courageous), take the stuff inside the *com.alexismorin.greebler* folder and then drag it anywhere into your regular project hierarchy.
 
 Per usual, this was whipped up in a couple of hours on my couch (and a few on my bed here and there, give me a break) - bugs beware, tweak or fork as you wish 👨🏻‍🎨
+
+#### Bugs
+
+- Unity: Some stuff still spawns under large objects - not that much of a problem but could be a performance issue for larger projects
