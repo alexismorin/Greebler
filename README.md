@@ -7,7 +7,7 @@ In her [2017 GDC presentation](https://www.youtube.com/watch?v=WumyfLEa6bU), Tra
 
 While nowadays realtime mesh painting tools allow for impressive customization and complex detailing, the final greebling pass is often done manually and (to the pained cries of level artists) often requires touch-ups when (not if, *when*) the level design changes. With this engine-agnostic plugin, you can now simply set a bounding volume, throw in the meshes you'd like to use and you will then be able to interactively instance them all over the map (while also being able to control values like noise magnitude, mesh orientation and density).
 
-**While the the Unity package is fully functional, I'm still at work on the Unreal version. Hang tight!**
+**While the the Unity package is fully functional, I'm still at work on the Unreal version (Yes I'm actually on it, I need for a production). Hang tight!**
 
 ### Usage - Unity
 
