@@ -34,7 +34,7 @@ When you're happy with the preview, press the *Greeble* button and your scene sh
 
 ![unityresults](images/unityresults.png)
 
-Per usual for small meshes, remember to have them non-static and with a GPU instanced shader to save on performance.
+Per usual for detail meshes, remember to have them non-static and with a GPU instanced shader to save on performance. Don't feel guilty about dynamic meshes, that's what the Made with Unity did for the *Book of the Dead* foliage!
 
 ### Install process
 The repository is split for the two engines: the *Plugin* folder's for Unreal and the *Packages* folder for Unity.
