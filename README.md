@@ -23,12 +23,12 @@ You now have a new asset type, the *Greeble Component*. It's pretty self explana
 
 You can tweak a few settings (if you're feeling anxious they all have in-engine tooltips):
 
-    - Voxel Size: How dense should the generated previews and greeble be. Smaller numbers = higher detail
-    - Noise Magnitude: Noise applied to the final spawn positions.
-    - Footing Threshold: Higher values here will make greeble only appear in cracks. 3 is a good value, use 2 for stuff like grass.
-    - Gravity Direction: Vector direction of where greeble will settle. Set to 0,1,0 for stalactites?
-    - Drop Threshold: Voxel threshold to spawn greeble. Higher values = Higher density though you probably should just decrease voxel size.
-    - Spawn Mask: Spawn mask to decide on which layers to spawn greeble.
+- Voxel Size: How dense should the generated previews and greeble be. Smaller numbers = higher detail
+- Noise Magnitude: Noise applied to the final spawn positions.
+- Footing Threshold: Higher values here will make greeble only appear in cracks. 3 is a good value, use 2 for stuff like grass.
+- Gravity Direction: Vector direction of where greeble will settle. Set to 0,1,0 for stalactites?
+- Drop Threshold: Voxel threshold to spawn greeble. Higher values = Higher density though you probably should just decrease voxel size.
+- Spawn Mask: Spawn mask to decide on which layers to spawn greeble.
 
 When you're happy with the preview, press the *Greeble* button and your scene should get populated with meshes. If you're unhappy with it, press *Reseed* and keep tweaking!
 
